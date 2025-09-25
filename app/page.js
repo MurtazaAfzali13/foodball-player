@@ -35,24 +35,33 @@ export default function Dashboard() {
     <div className="max-w-7xl mx-auto px-6 py-10 space-y-16">
       
       {/* Image Gallery / Slideshow */}
-      <section className="flex flex-row items-center justify-between mt-6">
+      <section className="flex flex-col md:flex-row items-center justify-between mt-6">
   {/* Left Side - Slideshow */}
-  <div className="w-1/2 pr-4">
+  <div className="w-full md:w-1/2 md:pr-4">
     <ImageSlideshow />
   </div>
 
   {/* Right Side - Text & CTA */}
-  <div className="w-1/2 pl-4">
+  <div className="w-full md:w-1/2 md:pl-4 mt-4 md:mt-0">
     <div className={classes.hero}>
-      <h1>NextLevel Football for NextLevel Fans</h1>
-      <p>Celebrate the game. Relive the glory. Know your legends.</p>
+      <h1 className="text-xl md:text-3xl font-bold">
+        NextLevel Football for NextLevel Fans
+      </h1>
+      <p className="mt-2 text-gray-600">
+        Celebrate the game. Relive the glory. Know your legends.
+      </p>
     </div>
-    <div className={classes.cta}>
-      <Link href="/community">Join the Fan Community</Link>
-      <Link href="/foodballs">Explore Players</Link>
+    <div className={`${classes.cta} mt-4 flex flex-col sm:flex-row gap-2`}>
+      <Link href="/community" className="btn-primary">
+        Join the Fan Community
+      </Link>
+      <Link href="/foodballs" className="btn-secondary">
+        Explore Players
+      </Link>
     </div>
   </div>
 </section>
+
 
       {/* Player Abilities */}
       <section>

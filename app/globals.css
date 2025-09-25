@@ -20,10 +20,22 @@ body {
 .header-background {
   position: absolute;
   width: 100%;
-  height: 320px;
+  height: 200px;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+@media (min-width: 640px) {
+  .header-background {
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-background {
+    height: 320px;
+  }
 }
 
 svg {
@@ -34,13 +46,14 @@ svg {
 
 .not-found,
 .error {
-  margin-top: 5rem;
+  margin-top: 3rem;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .not-found h1,
 .error h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 0px;
   font-weight: 900;
   color: #262626;
@@ -51,13 +64,49 @@ svg {
   background-size: cover;
   background-position: center;
   font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
 }
 
 .not-found p,
 .error p {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #ddd8d8;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .not-found,
+  .error {
+    margin-top: 4rem;
+  }
+  
+  .not-found h1,
+  .error h1 {
+    font-size: 4rem;
+  }
+  
+  .not-found p,
+  .error p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found,
+  .error {
+    margin-top: 5rem;
+  }
+  
+  .not-found h1,
+  .error h1 {
+    font-size: 5rem;
+  }
+  
+  .not-found p,
+  .error p {
+    font-size: 1.5rem;
+  }
 }
 .fullscreen-image {
   width: 100%;
@@ -78,13 +127,13 @@ svg {
   align-items: center;
   justify-content: center;
   z-index: 50;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .modal-container {
   position: relative;
-  max-width: min(90vw, 1000px);
-  max-height: 90vh;
+  max-width: min(95vw, 1000px);
+  max-height: 95vh;
   background: #111;
   border-radius: 0.5rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
@@ -102,15 +151,33 @@ svg {
   position: absolute;
   top: 0.25rem;
   right: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  line-height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
   text-align: center;
   border-radius: 9999px;
   color: #fff;
   background: rgba(255,255,255,0.15);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .modal-backdrop {
+    padding: 1rem;
+  }
+  
+  .modal-container {
+    max-width: min(90vw, 1000px);
+    max-height: 90vh;
+  }
+  
+  .modal-close {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 @theme inline {

@@ -18,7 +18,6 @@ export default function ShareMealPage() {
         <form
           className="bg-white shadow-lg rounded-xl p-6 space-y-6"
           action={sharePlayer}
-          encType="multipart/form-data"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <p className="flex flex-col space-y-2">
