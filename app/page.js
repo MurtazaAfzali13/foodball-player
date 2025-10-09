@@ -141,7 +141,8 @@ export default function Dashboard() {
                 <div><strong>National Goals:</strong> {selectedPlayer.profile.goalsNational}</div>
                 <div><strong>National Games:</strong> {selectedPlayer.profile.gamesNational}</div>
                 <div><strong>Penalties:</strong> {selectedPlayer.profile.penalties}</div>
-                <div><strong>Ballon d'Or:</strong> {selectedPlayer.profile.ballonDor}</div>
+                <div><strong>Ballon d&apos;Or:</strong> {selectedPlayer.profile.ballonDor}</div>
+
                 <div><strong>Golden Boot:</strong> {selectedPlayer.profile.goldenBoot}</div>
                 <div><strong>Club Titles:</strong> {selectedPlayer.profile.clubTitles}</div>
                 <div><strong>National Titles:</strong> {selectedPlayer.profile.nationalTitles}</div>
